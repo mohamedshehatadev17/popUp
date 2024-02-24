@@ -1,0 +1,102 @@
+*,body,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow:row wrap;
+}
+.item{
+    width: 30%;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+}
+@media (max-width:1200px) {
+    body{
+        overflow-x: hidden;
+    }
+
+}
+@media (max-width:991px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: unset;
+    }
+    .item {
+        width: 45%; 
+        margin: 20px 0;
+        cursor: pointer;
+    }
+
+}
+@media (max-width:767px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: unset;
+    }
+    .item {
+        width: 100%;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+.light-box-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8080808a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-box-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 550px;
+    background-image: url(item-image.jpg);
+    position: relative;
+    background-size: cover;
+}
+.light-box-img i {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+.light-box-img :nth-child(2){
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#cusor{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
